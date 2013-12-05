@@ -1,0 +1,72 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	background-color: #2c3e50;
+	margin: 0;
+	padding: 0;
+    /*overflow:hidden;*/
+	
+}
+/* ~~ Element/tag selectors ~~ */
+ul { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.notice {
+    text-align: center;
+    color: #f1c40f;  /* colour = sunflower*/
+	font-size: 10em;
+    display: block;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#spots {
+    width:1000px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#score{
+    display: block;
+	float:right;
+    font-size:1.5em;
+}
+
+#pause{
+	border:none;
+	float:left;
+	color: #f1c40f;
+}
+
+p, span {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 2%;
+	padding-left: 2%; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+	color: #ecf0f1;
+    border: none;
+    text-decoration: none; 
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+/*header {
+	background-color: #2c3e50;
+	padding-top: 0.5%;
+	padding-bottom: 1%;
+	height: 1em;
+}*/
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, figure {
+	display: block;
+}
+
+
